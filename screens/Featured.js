@@ -24,6 +24,7 @@ const Featured = ({ navigation }) => {
       console.log("data", responseData);
       console.log("user ID", userID);
 //mmmm
+//kjhkjh
       if (responseData.__ENTITIES && Array.isArray(responseData.__ENTITIES)) {
         const newEvents = responseData.__ENTITIES.filter(newEvent => !events.find(oldEvent => oldEvent.__KEY === newEvent.__KEY));
         setEvents(prevEvents => [...prevEvents, ...newEvents]);
